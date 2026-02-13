@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="OppConcepts.Backend/OppConcepts.Backend.csproj" Id="4f4274a3-01ee-4640-8ca9-7a29bde89ec7" />
+  <Project Path="OppConcepts.Frontend/OppConcepts.Frontend.csproj" Id="0dae17f6-3492-4438-a2ba-eb004757dae3" />
+</Solution>

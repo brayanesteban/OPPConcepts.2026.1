@@ -39,11 +39,62 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="OppConcepts.Backend.SalaryEmployee">
-    <Position X="10.5" Y="0.75" Width="1.5" />
+    <Position X="9" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
       <FileName>SalaryEmployee.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="OppConcepts.Backend.HourlyEmployee">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAQAAAAEAAwAAAAAAAABAAAIAAAAAAAAAAE=</HashCode>
+      <FileName>HourlyEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OppConcepts.Backend.CommisionEmployee">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAACAAAAAAACEAAAABAAAAAAAEAAIAAgAAAAAAAA=</HashCode>
+      <FileName>CommisionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OppConcepts.Backend.BaseCommisionEmployee">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAAAEAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>BaseCommisionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OppConcepts.Backend.Ipay" Collapsed="true">
+    <Position X="12" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPay.cs</FileName>
+      <NewMemberFileName>Ipay.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OppConcepts.Backend.Invoice">
+    <Position X="12" Y="2.25" Width="1.5" />
+    <AssociationLine Name="Date" Type="OppConcepts.Backend.Date" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.688" Y="5.795" />
+        <Point X="12.688" Y="7.863" />
+        <Point X="7.062" Y="7.863" />
+        <Point X="7.062" Y="7.488" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.461" Y="0.548" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAgAAAFAAAAAAAAAAAAAAAJAAIggAAAgAA=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Date" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

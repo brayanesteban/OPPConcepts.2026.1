@@ -19,6 +19,7 @@
     var employee7 = new BaseCommisionEmployee("Eve", 7070, true, "Taylor", new Date(1998, 4, 5), new Date(2023, 1, 1), 30000000, 0.015f, 500000);
     employees.Add(employee7);
     var employee8 = new BaseCommisionEmployee("Frank", 8080, true, "Anderson", new Date(1985, 9, 15), new Date(2016, 1, 1), 0, 0.015f, 500000);
+    employees.Add(employee8);   
     foreach (var employee in employees)
     {
         Console.WriteLine(new string('-', 43));

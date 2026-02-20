@@ -7,6 +7,16 @@ namespace OppConcepts.Backend
 {
     public abstract class Employee
     {
+        protected Employee(string firstName, int id, bool isActive, string lastName, Date bornDate, Date hireDate)
+        {
+            FirstName = firstName;
+            Id = id;
+            IsActive = isActive;
+            LastName = lastName;
+            BornDate = bornDate;
+            HireDate = hireDate;
+        }
+
         public string FirstName { get; set; }
         public int Id { get; set; }
         public bool IsActive { get; set; }
@@ -16,13 +26,13 @@ namespace OppConcepts.Backend
 
         public Date HireDate { get; set; }
         
-        public Employee() { 
-        }
+
         public abstract decimal GetValueToPay();
 
         public override string ToString()
         {
-            return $"{Id} {FirstName} ({LastName})";
+            return $"{Id}\t{FirstName} {LastName}\n\t"+  
+            $"Value to pay: {GetValueToPay():C2}";
         }
 
     }

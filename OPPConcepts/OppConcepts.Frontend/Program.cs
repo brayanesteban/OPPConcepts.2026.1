@@ -2,13 +2,8 @@
 
     try
 {
-    var date1 = new Date();
-    var date2 = new Date(2028, 2, 29);
-    var date3 = new Date(2012, 11, 21);
-
-    Console.WriteLine(date1);
-    Console.WriteLine(date2);
-    Console.WriteLine(date3);
+    var employee1 = new SalaryEmployee("John", 1010, true, "Doe", new Date(1990, 5, 15), new Date(2020, 1, 1), 2500000);
+    Console.WriteLine(employee1);
 
 }
 

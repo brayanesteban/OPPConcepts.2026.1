@@ -63,17 +63,17 @@ public class Date
     {
         if (day < 1)
         {
-            throw new ArgumentOutOfRangeException(nameof(day), "Day must be greathest than 0");
+            throw new ArgumentOutOfRangeException(nameof(day), "Day must be greater than 0");
         }
-        if (day == 29 && Month == 2 && IsLeapYear(Year))
+
+        int[] daysInMonth ={31,IsLeapYear(Year) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+        if (day > daysInMonth[Month - 1])
         {
-            return day;
+            throw new ArgumentOutOfRangeException(nameof(day),
+                $"Day must be between 1 and {daysInMonth[Month - 1]} for month {Month}.");
         }
-        int[] daysInMonth = { 31, IsLeapYear(Year) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }; 
-        if (day <= daysInMonth[Month - 1])
-        {
-            throw new ArgumentOutOfRangeException(nameof(day), $"Day must be between 1 and {daysInMonth[Month - 1]} for month {Month}. ");  
-        }
+
         return day;
     }
 
